@@ -1,5 +1,7 @@
-var Dewanand = { dbId: 22, email: "d@dewa.com", // compulsory value data of interface parameter
+var Dewanand = { dbId: 22, email: "d@dewa.com", // compulsory value data of interface parameter   // replaced User to Admin
     userId: 2211,
+    role: "admin",
+    githubToken: "github",
     startTrail: function () {
         return "Trail started";
     },

@@ -1,0 +1,15 @@
+{
+  "scripts": {
+  "start": "lite-server"
+  },
+  "port": 5500,
+  "root": "./",
+  "open": "index.html",
+  "wait": 100,
+  "mount": [
+    {"src": "**/*.ts", "dest": ""}
+  ],
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
