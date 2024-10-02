@@ -11,7 +11,6 @@ function getUpper(val: string){
 function signUpUser(name: string, email: string, isPaid: boolean){
     console.log(` ${name}, ${email}, ${isPaid}`);
     
-    
 }
 
 let loginUser = (name: string, email: string, isPaid: boolean = false) => {
@@ -39,8 +38,8 @@ const getHello = ( s: string): string => {
     return ""
 }
 
-const heros = ["thor", "spiderman", "ironman"]
-// const heros = [1, 2, 3]
+// const heros = ["thor", "spiderman", "ironman"]
+const heros = [1, 2, 3]
 
 heros.map(hero => {                     // automatically switchs heros parameter types string/number => check hover hero in  map.
     return `hero is ${hero}`

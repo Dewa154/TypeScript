@@ -27,6 +27,9 @@ function printAll(strs: string | string[] | null) {
     }
 }
 
+const strs = ["Sanjay", "Jay", "Deepak"]
+printAll(strs)
+
 
 function logValue(x: Date | string) {
     if (x instanceof Date) {
@@ -35,6 +38,9 @@ function logValue(x: Date | string) {
       console.log(x.toUpperCase());  
     }
   }
+
+let x = Date()
+logValue(x)
 
 
 
@@ -78,8 +84,14 @@ type Shape = Circle | Square | Rectangle
 function getTrueShape(shape: Shape){
     if (shape.kind === "circle") {
         return Math.PI * shape.radius ** 2
+    } else if (shape.kind === "square") {
+        return shape.side * shape.side
+    } else if (shape.kind === "rectangle") {
+        return shape.length * shape.width
+    } else {
+        const _defaultforshape: never = shape
+        return _defaultforshape
     }
-    // return shape.side * shape.side
 }
 
 
@@ -99,6 +111,17 @@ function getArea(shape: Shape){
             return _defaultforshape
     }
 }
+
+
+// Function call
+const circle: Circle = { kind: "circle", radius: 5 };
+const square: Square = { kind: "square", side: 4 };
+const rectangle: Rectangle = { kind: "rectangle", length: 6, width: 3 };
+
+console.log(`Area of circle: ${getArea(circle)}`);
+console.log(`Area of square: ${getArea(square)}`);
+console.log(`Area of rectangle: ${getArea(rectangle)}`);
+
 
 
 

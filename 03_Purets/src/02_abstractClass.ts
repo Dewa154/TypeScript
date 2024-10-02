@@ -9,7 +9,6 @@ abstract class TakePhoto {
         //some complex calculation
         return 8;
     }
-
 }
 
 
@@ -24,7 +23,6 @@ class Instagram extends TakePhoto{
 
     getSepia(): void {
         console.log("Sepia");
-        
     }
 }
 

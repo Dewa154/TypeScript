@@ -15,7 +15,7 @@ type Admin = {
     id: number
 }
 
-let Dewanand: User | Admin = {name: "Dewannad", id: 334}
+let Dewanand: User | Admin = {name: "Dewannad", id: 334 }
 
 Dewanand = {username: "dc", id: 334}
 
@@ -32,7 +32,6 @@ function getDbId(id: string | number){
     if (typeof id === "string") {
         id.toLowerCase()
     }
-
 }
 
 

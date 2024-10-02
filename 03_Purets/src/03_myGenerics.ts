@@ -19,12 +19,12 @@ function identityFour<T>(val: T): T {       // we can pass own type in Generics
     return val
 }
 
-interface Bootle{
+interface Bottle{
     brand: string,
     type: number
 }
 
-identityFour<Bootle>({})
+identityFour<Bottle>({})
 
 
 function getSearchProducts<T>(products: T[]): T {
@@ -54,7 +54,7 @@ function anotherFunction<T, U extends Database>(valOne:T, valTwo:U):object {
     }
 }
 
-// anotherFunction(3, {})
+anotherFunction(3, {connection: "Wifi", username: "sigma", password: "senta123456"})
 
 
 interface Quiz{
